@@ -2,7 +2,7 @@
 <html manifest="trainer.cache">
     <head>
         <meta charset="UTF-8">
-        <title>tRUCOS PS4</title>
+        <title>TRUCOS PS4</title>
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="font-awesome.min.css">
         <link rel="stylesheet" href="main.css">
@@ -17,7 +17,7 @@
                     {
                         document.getElementById("progress").style.textAlign='center';
                         document.getElementById("progress").style.color='red';
-                        document.getElementById("progress").innerHTML="<h3>Cargando cache: "+(Math.round(100*(a.loaded/a.total)))+"% Completado</h3>";
+                        document.getElementById("progress").innerHTML="<h3>Cargando cache: "+(Math.round(100*(a.loaded/a.total)))+"% Espere</h3>";
                     };
                     
                     window.applicationCache.oncached = window.applicationCache.onupdateready = function()
@@ -58,8 +58,8 @@
             <div class="modal-dialog" id="credits-dialog-size">
                 <div class="modal-content">
                     <div class="modal-header bg-darker">
-                        <h4 class="modal-title">Credits</h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Creditos</h4>
+                        <button type="button" class="cerrar" data-dismiss="modal">×</button>
                     </div>
                     <div class="modal-body">
                         <a href="https://github.com/xemio/" target="_blank">golden</a><br>
@@ -93,7 +93,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header bg-darker">
-                        <h4 class="modal-title">Instructions</h4>
+                        <h4 class="modal-title">Instrucciones</h4>
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
                     <div class="modal-body">
