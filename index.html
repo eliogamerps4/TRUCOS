@@ -2,7 +2,7 @@
 <html manifest="trainer.cache">
     <head>
         <meta charset="UTF-8">
-        <title>PS4 Offline Trainer (TylerMods) Update 06-26-2021</title>
+        <title>tRUCOS PS4</title>
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="font-awesome.min.css">
         <link rel="stylesheet" href="main.css">
@@ -10,21 +10,21 @@
             window.applicationCache.ondownloading = function()
                     {
                         
-                        document.getElementById("progress").innerHTML="<h3>Caching started...</h3>";
+                        document.getElementById("progress").innerHTML="<h3>CARGANDO CACHE</h3>";
                     };
                     
                     window.applicationCache.onprogress = function(a)
                     {
                         document.getElementById("progress").style.textAlign='center';
                         document.getElementById("progress").style.color='orange';
-                        document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+                        document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completado</h3>";
                     };
                     
                     window.applicationCache.oncached = window.applicationCache.onupdateready = function()
                     {
                         
                         document.getElementById("progress").style.color='green';
-                        document.getElementById("progress").innerHTML="<h3>Page Cached, Please Close Broser and Turn Off Internet!</h3>";
+                        document.getElementById("progress").innerHTML="<h3>cache Cargado Por favor apagar el internet y actualizar la pagina!</h3>";
                     };
             </script>
               <script src="jquery.min.js"></script>
@@ -37,7 +37,7 @@
             </head>
             <body class="bg-darker"><br>
         <div id="progress" style="color:white; align-content: center;"></div>
-        <div class="jumbotron transparent" style="margin: auto;height: 50%; width: 50%; border-radius: 10px; border: 5px black solid; border-color: yellow; background-position: center;background-repeat: no-repeat; background-size: 100% 100%;background-image: linear-gradient(black, black);backdrop-filter: blur(10px);">
+        <div class="jumbotron transparent" style="margin: auto;height: 50%; width: 50%; border-radius: 10px; border: 5px black solid; border-color: red; background-position: center;background-repeat: no-repeat; background-size: 100% 100%;background-image: linear-gradient(black, black);backdrop-filter: blur(10px);">
             <div class="d-flex justify-content-center">
                 <input id="ip" class="form-control" type="text" placeholder="localhost or 127.0.0.1" style="max-width :320px">
             </div>
@@ -49,8 +49,8 @@
             </div>
             <p></p>
             <div class="d-flex justify-content-center btn-toolbar">
-                <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#credits-dialog">Credits</button>
-                <button class="btn btn-primary ml-2" data-toggle="modal" data-target="#instructions-dialog">Instructions</button>
+                <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#credits-dialog">Creditos</button>
+                <button class="btn btn-primary ml-2" data-toggle="modal" data-target="#instructions-dialog">Instrucciones</button>
                 <button class="btn btn-primary ml-2" data-toggle="modal" data-target="#tips-dialog">Tips</button>
             </div>
         </div>
@@ -78,7 +78,7 @@
             <div class="modal-dialog" id="tips-dialog-size">
                 <div class="modal-content">
                     <div class="modal-header bg-darker">
-                        <h4 class="modal-title">Tips</h4>
+                        <h4 class="modal-title">consejos</h4>
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
                     <div class="modal-body">
@@ -97,13 +97,13 @@
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
                     <div class="modal-body">
-                        1)Enable HEN / GOLDHEN / MIRA if necessary.<br>
+                        1)Enable HEN / GOLDHEN / MIRA es necesario.<br>
                         2)Enable/Inject the WebRTE payload for you current PS4 Firmware.<br>
                         3)Cache Trainer (Go to Trainer Offline Link).<br>
-                        4)After Cache 100% Successfully. Close Browser and Re-Open it.<br>
+                        4)After Cache 100% Successfully. ya puedes cerrar el navegador.<br>
                         5)Launch your game on the PS4.<br>
-                        6)Click your game(with the matching CUSA/version) in the trainer.<br>
-                        7)If the trainer message says "Trainer Attached.", you can start cheating.<br>
+                        6)Click your game(with the matching CUSA/version) en el truco.<br>
+                        7)If the trainer message says "activando trucos.", Puedes activar los trucos.<br>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="modal-footer">
                         <h6 class="mr-auto">Status : <small id="Message" class=" font-weight-light"></small></h6>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">cerrar</button>
                     </div>
                 </div>
             </div>
